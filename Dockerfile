@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM registry.cn-beijing.aliyuncs.com/duzhongyu/alpine:latest
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --update nginx && mkdir -p /run/nginx  && rm -rf /var/cache/apk/*
 
